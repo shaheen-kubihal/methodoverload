@@ -10,8 +10,6 @@ public class methodoverload {
     }
 
     void overload(int a, int b) {
-        this.a = a;
-        this.b = b;
         int sub = a - b;
         System.out.println("Substraction : " + sub);
     }
@@ -19,6 +17,8 @@ public class methodoverload {
     public static void main(String[] args) {
         methodoverload obj = new methodoverload();
         obj.overload();
+        obj.overload(40, 20);
+        System.out.println("Method overloading java program");
     }
 
 }
